@@ -1,0 +1,19 @@
+name: WorldResetter
+main: WorldResetter\Main
+version: 1.0.0
+api: [1.10.0]
+
+load: POSTWORLD
+authors: [wolfdale,ace]
+description: Resets individual worlds
+
+commands:
+ wreset:
+  permission: wr.command
+  description: "Backup or restore worlds"
+  usage: /wreset <restore/backup> <WorldName>
+
+permissions:
+    wr.command:
+        description: "Backup/Restore worlds"
+        default: op
